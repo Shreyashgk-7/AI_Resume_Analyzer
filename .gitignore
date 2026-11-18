@@ -1,0 +1,25 @@
+# Local Python environments
+venv/
+.venv/
+env/
+
+# Python caches and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.coverage
+
+# Local credentials and environment settings
+.env
+.env.*
+!.env.example
+
+# User-submitted resumes and temporary files
+uploads/
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
