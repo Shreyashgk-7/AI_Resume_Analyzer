@@ -1,0 +1,52 @@
+# ================== STOPWORDS List ==================
+STOPWORDS = {
+"a","an","the","and","or","but","if","then","else","when","while",
+"of","to","for","in","on","with","by","at","from","as","is","are","was","were",
+"be","been","being","it","this","that","these","those",
+"he","she","they","them","we","you","i","me","my","our","your","their","his","her","its","ours","yours","theirs",
+"company","organization","organisation","department","team","member","staff","employee","worker","client","customer",
+"service","support","project","task","assignment","responsibility","responsibilities","requirement","requirements",
+"qualification","qualifications","experience","background","fulltime","parttime","contract","freelance","internship",
+"temporary","permanent","remote","onsite","hybrid","job","role","position","career","degree","bachelor","master","phd",
+"mba","certificate","certification","diploma","course","training","study","academic","education","junior","senior","associate",
+"entry","mid","lead","principal","head","chief","executive","director","officer","work","working","develop","developing",
+"developed","manage","managing","managed","design","designed","implement","implemented","create","created","ensure",
+"ensured","optimize","optimized","deliver","delivered","maintain","maintained","collaborate","collaborated","provide",
+"providing","supporting","apply","applying","performing","assisting","assist","coordinate","coordinating","maintaining",
+"handling","handle","help","helping","participate","participating","interact","interacting","contribute","contributing",
+"ownership","execution","planning","plan","strategy","strategic","analysis","analytical","meeting","meetings","liaison",
+"relationship","relations","communication","communicating","reporting","reports","documentation","document","tracking",
+"tracking system","monitoring","follow-up","follow up","supportive","collaborative","assistance","coordination",
+"update","updating","maintaining records","checking","record","records","preparation","preparing","review","reviewing",
+"evaluation","evaluating","ensuring","adherence","guidelines","policy","policies","standards","compliance","regulatory",
+"regulations","safety","health","environment","security","confidentiality","privacy","professional","professionalism",
+"teamwork","initiative","proactive","flexible","adaptable","motivated","organized","self-motivated","self-driven",
+"fast-paced","dynamic","high-pressure","multitasking","interpersonal","collaboration","day-to-day","daily","activities",
+"tasks","involvement","check","following","supervise","supervising","supervision","oversee","overseeing","liaise",
+"liaising","engage","engaging","interaction","interacting","lead","leading","drive","driving","execute","executing",
+"analyze","analyzing","research","researching","communicate","communicating","present","presenting","track","tracking",
+"audit","auditing","assessment","assess","documentation review","ensure compliance","policy adherence","best practices",
+"standard operating procedures","sop","guideline","workflows","process","processes","business process","business operations",
+"cross-functional","synergy","relationship management","vendor","vendor management","client management","customer relationship",
+"performance","performance review","key performance indicators","kpi","objective","objectives","goal","goals","deadline",
+"timely","efficient","efficiency","quality","quality control","quality assurance","risk","risk management",
+"regulatory requirements","legal","confidential","professional development","training sessions","team meetings",
+"brainstorming","collaborative sessions","workshops","seminars","participation","networking","mentoring","coaching",
+"support staff","administrative","administration","clerical","clerical work","office work","front desk","receptionist",
+"entry-level","temporary associate","project team member","assistant trainee","trainee assistant","internship student",
+"summer intern","volunteer assistant","volunteer coordinator", "developer","looking"
+}
+
+# ================== ROLES List ==================
+ROLES = {
+"employee","employees","worker","staff","helper","trainee","participant","observer","attendee",
+"support staff","temporary worker","casual worker","assistant manager","junior staff","senior staff",
+"project staff","administrative assistant","office assistant","front desk","receptionist",
+"internship student","summer intern","volunteer assistant","volunteer coordinator","contract staff",
+"contract worker","temporary associate","assistant","associate","clerk","volunteer",
+"junior employee","senior employee","administrative staff","office staff","support employee",
+"temporary employee","contract employee","project member","front office","project team member",
+"team staff","team helper","assistant trainee","trainee assistant","intern",
+"team lead","managerial","supervisor","executive","coordinator","officer","trainer","faculty",
+"chairman","chair","vice","president","professor","researcher","consulting"
+}
