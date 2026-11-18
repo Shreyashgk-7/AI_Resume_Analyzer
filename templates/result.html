@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Analysis Result</title>
+</head>
+<body style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+             background: linear-gradient(135deg, #f0f4f8, #e8f5e9); 
+             margin:0; padding:0; color:#333;">
+
+    <div style="max-width:950px; margin:40px auto; padding:0 15px;">
+
+        <!-- Personal Information -->
+        <div style="background: linear-gradient(145deg, #ffffff, #e3f2fd); 
+                    box-shadow:0 10px 30px rgba(0,0,0,0.15); border-radius:15px; 
+                    padding:25px 30px; margin-bottom:30px; transition: transform 0.3s;">
+            <h3 style="color:#0d47a1; margin-bottom:20px; font-size:24px; text-shadow:1px 1px 3px rgba(0,0,0,0.1);">
+                Personal Information
+            </h3>
+            {% if personal_info %}
+                {% for key, value in personal_info.items() %}
+                    <p style="font-size:17px; margin:8px 0;">
+                        <strong style="color:#0d47a1;">{{ key }}:</strong> {{ value }}
+                    </p>
+                {% endfor %}
+            {% endif %}
+        </div>
+
+        <!-- Education -->
+        <div style="background: linear-gradient(145deg, #ffffff, #fffde7); 
+                    box-shadow:0 10px 30px rgba(0,0,0,0.15); 
+                    border-radius:15px; padding:25px 30px; margin-bottom:30px; transition: transform 0.3s;">
+            <h3 style="color:#0d47a1; margin-bottom:20px; font-size:24px; text-shadow:1px 1px 3px rgba(0,0,0,0.1);">
+                Education
+            </h3>
+            <pre style="background-color:#f5f5f5; padding:18px; border-radius:10px; 
+                        overflow-x:auto; font-size:16px; box-shadow: inset 0 3px 6px rgba(0,0,0,0.05);">
+                {{ education }}
+            </pre>
+        </div>
+
+        <!-- Experience -->
+        <div style="background: linear-gradient(145deg, #ffffff, #fff3e0); 
+                    box-shadow:0 10px 30px rgba(0,0,0,0.15); border-radius:15px; 
+                    padding:25px 30px; margin-bottom:30px; transition: transform 0.3s;">
+            <h3 style="color:#0d47a1; margin-bottom:20px; font-size:24px; text-shadow:1px 1px 3px rgba(0,0,0,0.1);">
+                Experience
+            </h3>
+            <pre style="background-color:#f5f5f5; padding:18px; border-radius:10px; 
+                        overflow-x:auto; font-size:16px; box-shadow: inset 0 3px 6px rgba(0,0,0,0.05);">
+                {{ experience }}
+            </pre>
+        </div>
+
+        <!-- Skill Analysis -->
+        <div style="background: linear-gradient(145deg, #ffffff, #e8f5e9); 
+                    box-shadow:0 10px 30px rgba(0,0,0,0.15); border-radius:15px; 
+                    padding:25px 30px; margin-bottom:30px; transition: transform 0.3s;">
+            <h3 style="color:#0d47a1; margin-bottom:20px; font-size:24px; text-shadow:1px 1px 3px rgba(0,0,0,0.1);">
+                Skill Analysis
+            </h3>
+            <p style="font-size:17px; margin:8px 0;"><strong style="color:#0d47a1;">Detected Skills:</strong> {{ skills['Detected Skills'] }}</p>
+            <p style="font-size:17px; margin:8px 0;"><strong style="color:#0d47a1;">Matched Skills:</strong> {{ skills['Matched Skills'] }}</p>
+            <p style="font-size:17px; margin:8px 0;"><strong style="color:#0d47a1;">Missing Skills:</strong> {{ skills['Missing Skills'] }}</p>
+            <p style="font-size:17px; margin:8px 0;"><strong style="color:#0d47a1;">Extra Resume Skills:</strong> {{ skills['Extra Resume Skills'] }}</p>
+            <p style="font-size:17px; margin:8px 0;"><strong style="color:#0d47a1;">Score:</strong> {{ skills['Score'] }}%</p>
+        </div>
+
+        <a href="{{ url_for('index') }}" 
+           style="display:block; text-align:center; margin:40px auto; text-decoration:none; 
+                  color:white; background-color:#0d47a1; padding:16px 35px; border-radius:12px; 
+                  font-weight:700; width:max-content; box-shadow:0 5px 15px rgba(0,0,0,0.2); 
+                  transition: all 0.3s ease-in-out;"
+           onmouseover="this.style.backgroundColor='#08306b'; this.style.transform='scale(1.05)';" 
+           onmouseout="this.style.backgroundColor='#0d47a1'; this.style.transform='scale(1)';">
+           Analyze Another Resume
+        </a>
+
+    </div>
+</body>
+</html>
